@@ -1,0 +1,32 @@
+aid: base
+name: Base
+description: "Building quick backends"
+url: https://www.base-api.io/
+specificationVersion: '0.20'
+created: '2026-05-28'
+modified: '2026-05-28'
+x-source: public-apis/public-apis
+x-category: "Development"
+x-tier: 3
+x-tier-reason: bulk-registered-from-public-apis
+tags:
+  - Development
+  - Public APIs
+apis:
+  - name: Base
+    description: "Building quick backends"
+    humanURL: https://www.base-api.io/
+    baseURL: https://www.base-api.io/
+    tags:
+      - Development
+    properties:
+      - type: Documentation
+        url: https://www.base-api.io/
+common:
+  - type: Website
+    url: https://www.base-api.io/
+  - type: PublicAPIsListing
+    url: https://github.com/public-apis/public-apis
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
