@@ -1,0 +1,27 @@
+aid: base
+review:
+  status: mismatch
+  reviewed: '2026-05-29'
+  reviewer: Kin Lane
+  task: "Generate AsyncAPI 2.6 spec for Base's public WSS RPC API (Coinbase L2)"
+  finding: |
+    This repository is NOT for Base (Coinbase's Ethereum L2 / base.org).
+    It is for "Base" (base-api.io), a service describing itself as
+    "Building quick backends" — bulk-registered from the public-apis/public-apis
+    catalog on 2026-05-28 under the Development category.
+  evidence:
+    - apis.yml `url` is https://www.base-api.io/ (not base.org / docs.base.org)
+    - apis.yml `description` is "Building quick backends" (not blockchain/L2)
+    - apis.yml `x-category` is "Development" sourced from public-apis/public-apis
+    - apis.yml `x-tier` is 3 with reason "bulk-registered-from-public-apis"
+    - No mention of Ethereum, OP-stack, eth_subscribe, RPC, or WSS anywhere
+      in the repo content
+  action_taken: none
+  action_skipped:
+    - did NOT create /Users/kinlane/GitHub/all/base/asyncapi/base-asyncapi.yml
+    - did NOT modify /Users/kinlane/GitHub/all/base/apis.yml
+    - did NOT fetch docs.base.org (would not apply to this provider)
+  recommendation: |
+    The Coinbase L2 "Base" provider should live in a separate aid (e.g.
+    `base-org` or `base-l2`) registered against base.org / docs.base.org.
+    This `base` aid should remain dedicated to base-api.io.
