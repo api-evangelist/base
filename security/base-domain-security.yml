@@ -1,0 +1,15 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.base-api.io
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 19 07:36:28 2026 GMT
+  hsts: false
+domains:
+- domain: base-api.io
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false

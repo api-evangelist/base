@@ -23,6 +23,8 @@ apis:
       - type: Documentation
         url: https://www.base-api.io/
 common:
+  - type: DomainSecurity
+    url: security/base-domain-security.yml
   - type: Website
     url: https://www.base-api.io/
   - type: PublicAPIsListing
